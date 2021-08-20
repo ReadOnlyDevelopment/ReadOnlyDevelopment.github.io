@@ -3,7 +3,7 @@ export default {
   dist: './docs',
   public: './public',
   buildOptions: {
-    site: 'https://github.readonlydev.com/',
+    site: 'https://github.readonlydev.com',
     sitemap: true,
   },
   devOptions: {
