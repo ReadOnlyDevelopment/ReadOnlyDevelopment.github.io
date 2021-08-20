@@ -1,15 +1,13 @@
 export default {
-  // projectRoot: '.',     // Where to resolve all URLs relative to. Useful if you have a monorepo project.
-  // pages: './src/pages', // Path to Astro components, pages, and data
-  dist: './docs',       // When running `astro build`, path to final static output
-  // public: './public',   // A folder of static files Astro will copy to the root. Useful for favicons, images, and other files that don’t need processing.
+  pages: './src/pages',
+  dist: './docs',
+  public: './public',
   buildOptions: {
-    // site: 'http://example.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-    // sitemap: true,       // Generate sitemap (set to "false" to disable)
+    site: 'https://github.readonlydev.com/',
+    sitemap: true,
   },
   devOptions: {
-    // port: 3000,         // The port to run the dev server on.
-    // tailwindConfig: '', // Path to tailwind.config.js if used, e.g. './tailwind.config.js'
+    //port: 3000,
   },
-  renderers: ['@astrojs/renderer-preact'],
+  renderers: ['@astrojs/renderer-preact', '@astrojs/renderer-react', '@astrojs/renderer-svelte', '@astrojs/renderer-vue', '@astrojs/renderer-solid'],
 };
